@@ -2,20 +2,103 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#ans{
+  width: 800px;
+  height:400px;
+  background-color: rgba(65, 65, 65, 0.277);
+  border-radius: 10px;
+  color:white;
+}
+#input{
+  padding: 10px;
+  /* background-color: white; */
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgba(65, 65, 65, 0.277);
+}
+#cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  width: 100%;
+  /* border-radius: 0%; */
+}
+#main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+  height: fit-content;
+ 
+ /* Button */ 
+
+ .btn {
+  border: none;
+  width: 11em;
+  height: 3.2em;
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #3f3f3f;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.sparkle {
+  fill: #AAAAAA;
+  transition: all 800ms ease;
+}
+
+.text {
+  font-weight: 600;
+  color: #AAAAAA;
+  font-size: large;
+}
+
+.btn:hover {
+  background: linear-gradient(0deg,#A47CF3,#683FEA);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+  inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+  0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+  0px 0px 180px 0px #9917FF;
+  transform: translateY(-2px);
+}
+
+.btn:hover .text {
+  color: white;
+}
+
+.btn:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+} 
+
+
+ 
+}
+@media screen and (max-width: 800px) {
+  #main{
+    /* height: 100%; */
+    width: 100%;
+    /* z-index: 1000; */
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  #ans{
+    width: 100%;
+    height:310px;
+  }
+ 
 }
