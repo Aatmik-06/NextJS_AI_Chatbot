@@ -31,9 +31,6 @@ export default function Home() {
        setAnswer(response['data']['candidates'][0]['content']['parts'][0]['text']);
        setQuestion("")
        setDisplayquestion(question)
-       
-      
-     document.getElementById('question').style.display="block"
      
      } 
       catch (error) {
