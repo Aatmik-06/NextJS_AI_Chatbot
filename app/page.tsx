@@ -17,7 +17,7 @@ export default function Home() {
    // Created function to generate answer
    
    async function generatedanswer() {
-     setAnswer("One moment please...")
+     setAnswer("almost there! Your content is on its way… ")
      try {
        
        const response = await axios({
