@@ -47,7 +47,6 @@ export default function Home() {
    }
    return (
      <>
-   <Container fluid id='cont'>
       <Vortex 
         backgroundColor="black"
         rangeY={800}
@@ -55,6 +54,8 @@ export default function Home() {
         baseHue={600}
         className="flex items-center flex-col justify-center w-full h-full"
       >
+   <Container fluid id='cont'>
+     
          <div id='main'>
       <h1>Genie AI Chatbot</h1>
       <div>
@@ -85,9 +86,10 @@ export default function Home() {
       </div>
       </div>
      
-      
-       </Vortex>
+     
        </Container>
+        
+       </Vortex>
      </>
    )
 }
