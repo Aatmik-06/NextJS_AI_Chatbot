@@ -17,7 +17,7 @@ export default function Home() {
    // Created function to generate answer
    
    async function generatedanswer() {
-     setAnswer("Thinking...")
+     setAnswer("One moment please...")
      try {
        
        const response = await axios({
@@ -33,7 +33,7 @@ export default function Home() {
        setDisplayquestion(question)
        
       
-    //  document.getElementById('question').style.display="block"
+     document.getElementById('question').style.display="block"
      
      } 
       catch (error) {
