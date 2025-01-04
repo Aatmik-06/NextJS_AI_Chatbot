@@ -11,7 +11,7 @@ export default function Home() {
    const [question, setQuestion] = useState("");
    const [displayquestion, setDisplayquestion] = useState("");
    const [answer, setAnswer]= useState("");
-   
+ 
   
  
    // Created function to generate answer
@@ -40,7 +40,7 @@ export default function Home() {
    }
    
    if(answer==""){
-     setAnswer("👋Hey there! I'm Genie AI Chatbot. How can I help you today?")
+     setAnswer("Hey there! I'm Genie AI Chatbot. How can I help you today?")
    }
    return (
      <>
@@ -57,7 +57,6 @@ export default function Home() {
       <h1>Genie AI Chatbot</h1>
       <div>
       <div id="ans"  className="flex-1 overflow-y-auto mb-4 rounded-lg shadow-lg p-4 hide-scrollbar" >
-        
        <h3 style={{display:"none"}} id='question'> Question: {displayquestion} </h3>
        
        <ReactMarkdown  className="overflow-auto hide-scrollbar items-center">   
@@ -69,12 +68,7 @@ export default function Home() {
       
       </div>
       </div>
-      <textarea value={question} id='input'  onChange={(e) => setQuestion(e.target.value)} placeholder="Ask anything..."  onKeyDown={(e) => {
-                if (e.key === 'Enter' && !e.shiftKey) {
-                  e.preventDefault();
-                  generatedanswer();
-                }
-              }}></textarea> <br /><br />
+      <textarea value={question} id='input'  onChange={(e) => setQuestion(e.target.value)} placeholder="Ask anything..." ></textarea> <br /><br />
      
       <div>
       
