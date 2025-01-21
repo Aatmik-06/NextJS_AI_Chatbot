@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h3>Project Live URL - https://next-js-ai-chatbot-git-main-aatmik-06s-projects.vercel.app/ </h3>
 
 ## Getting Started
 
