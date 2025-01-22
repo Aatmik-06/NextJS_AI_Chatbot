@@ -17,7 +17,7 @@ export default function Home() {
    // Created function to generate answer
    
    async function generatedanswer() {
-     setAnswer("almost there! Your content is on its way… ")
+     setAnswer("Thinking.... ")
      try {
        
        const response = await axios({
@@ -51,12 +51,12 @@ export default function Home() {
         baseHue={600}
         className="flex items-center flex-col justify-center w-full h-full"
       >
-   <Container fluid id='cont'>
+   <Container fluid id='cont' className="p-1">
      
          <div id='main'>
       <h1>Genie AI Chatbot</h1>
       <div>
-      <div id="ans"  className="flex-1 overflow-y-auto mb-4 rounded-lg shadow-lg p-4 hide-scrollbar" >
+      <div id="ans"  className="flex-1 overflow-y-auto mb-4 rounded-lg shadow-lg hide-scrollbar" >
        <h3 style={{display:"none"}} id='question'> Question: {displayquestion} </h3>
        
        <ReactMarkdown  className="overflow-auto hide-scrollbar items-center">   
