@@ -86,10 +86,7 @@
 .btn:hover .sparkle {
   fill: white;
   transform: scale(1.2);
-} 
-
-
- 
+}  
 }
 @media screen and (max-width: 800px) {
   #main{
@@ -98,7 +95,6 @@
   }
   #ans{
     width: 100%;
-    height:310px;
-  }
- 
+    height:fit-content;
+  }  
 }
