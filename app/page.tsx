@@ -6,6 +6,7 @@ import axios from "axios";
 import ReactMarkdown from "react-markdown";
 import { Vortex } from "@/components/ui/vortex";
 import Container from "react-bootstrap/Container";
+import Spinner from 'react-bootstrap/Spinner';
 export default function Home() {
    // Created state for question and answer
    const [question, setQuestion] = useState("");
@@ -15,9 +16,16 @@ export default function Home() {
   
  
    // Created function to generate answer
+  
+
    
-   async function generatedanswer() {
-     setAnswer("Thinking.... ")
+   
+   async function generatedanswer(e) {
+    
+     if(question== ""){
+      alert("Please provide a question or prompt")
+     }else{
+      setAnswer("Thinking....")
      try {
        
        const response = await axios({
@@ -37,11 +45,26 @@ export default function Home() {
        console.log(error);
        setAnswer("Sorry - Something went wrong. Please try again!");
      }
+    }
    }
-   
+  
    if(answer==""){
-     setAnswer("Hey there! I'm Genie AI Chatbot. How can I help you today?")
+     setAnswer("Hey there! I'm Genie AI Chatbot. How can I help you today?");
+     
    }
+  //  const ans =()=> {
+  //   return(<>
+   
+  //       <Spinner
+  //         animation="grow"
+  //         role="status"
+  //         aria-hidden="true"
+  //       />
+    
+    
+  //          </>  
+  //     )
+  //  }
    return (
      <>
       <Vortex 
@@ -57,18 +80,23 @@ export default function Home() {
       <h1>Genie AI Chatbot</h1>
       <div>
       <div id="ans"  className="flex-1 overflow-y-auto mb-4 rounded-lg shadow-lg hide-scrollbar" >
-       <h3 style={{display:"none"}} id='question'> Question: {displayquestion} </h3>
+       {/* <h3 style={{display:"none"}} id='question'> Question: {displayquestion} </h3> */}
        
-       <ReactMarkdown  className="overflow-auto hide-scrollbar items-center">   
+       <ReactMarkdown  className="overflow-auto hide-scrollbar items-center" >   
        
-       {answer}
+       {answer} 
  
        </ReactMarkdown>
       
       
       </div>
       </div>
-      <textarea value={question} id='input'  onChange={(e) => setQuestion(e.target.value)} placeholder="Ask anything..." ></textarea> <br /><br />
+      <textarea required value={question} id='input' onChange={(e) => setQuestion(e.target.value)} placeholder="Ask anything..."  onKeyDown={(e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                  e.preventDefault();
+                  generatedanswer(e);
+                }
+              }}></textarea> <br /><br />
      
       <div>
       
