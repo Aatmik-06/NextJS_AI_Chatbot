@@ -20,7 +20,7 @@ export default function Home() {
 
    
    
-   async function generatedanswer(e) {
+   async function generatedanswer() {
     
      if(question== ""){
       alert("Please provide a question or prompt")
