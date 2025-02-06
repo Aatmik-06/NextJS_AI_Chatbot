@@ -94,7 +94,7 @@ export default function Home() {
       <textarea required value={question} id='input' onChange={(e) => setQuestion(e.target.value)} placeholder="Ask anything..."  onKeyDown={(e) => {
                 if (e.key === 'Enter' && !e.shiftKey) {
                   e.preventDefault();
-                  generatedanswer(e);
+                  generatedanswer();
                 }
               }}></textarea> <br /><br />
      
