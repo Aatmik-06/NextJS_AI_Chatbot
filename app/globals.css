@@ -91,6 +91,7 @@
   transform: scale(1.2);
 }  
 }
+
 @media screen and (max-width: 800px) {
   #main{
     height: 100%;
@@ -115,9 +116,50 @@
   }
  #ans{
   padding: 10px;
-  max-height: 300px;
+  /* max-height: 300px; */
   /* background-color: transparent; */
 
  }
   
 }
+@media screen and (max-width:390px) {
+
+
+}
+
+
+#main {
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+#ans {
+  height: 55vh;
+  min-height: 55vh;
+  max-height: 55vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+#cont {
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+  box-sizing: border-box;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
