@@ -71,7 +71,7 @@ export default function Home() {
         backgroundColor="black"
         rangeY={800}
         particleCount={500}
-        baseHue={600}
+        baseHue={500}
         className="flex items-center flex-col justify-center w-full h-full"
       >
    <Container fluid id='cont' className="p-1">
