@@ -91,11 +91,11 @@
   transform: scale(1.2);
 }  
 }
-
 @media screen and (max-width: 800px) {
   #main{
     height: 100%;
     /* width: 100vw; */
+    background-color: #000000f0;
     min-width: 100%;
   }
   #ans{
@@ -122,44 +122,12 @@
  }
   
 }
-@media screen and (max-width:390px) {
-
+@media screen and (max-width:500px) {
+  #ans{
+   
+    max-height: 300px;
+    
+  
+   }
 
 }
-
-
-#main {
-  height: 100vh;
-  min-height: 100vh;
-  max-height: 100vh;
-  overflow: hidden;
-  box-sizing: border-box;
-  /* margin-bottom: 20px; */
-}
-
-#ans {
-  height: 50vh;
-  min-height: 50vh;
-  max-height: 50vh;
-  overflow-y: auto;
-  box-sizing: border-box;
-  /* margin-bottom: 20px; */
-}
-
-#cont {
-  height: 100vh;
-  min-height: 100vh;
-  max-height: 100vh;
-  box-sizing: border-box;
-  margin: 0 0 0 0;
-  padding: 0;
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-
