@@ -57,19 +57,19 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
-  background: #3f3f3f;
+  background: #272727;
   cursor: pointer;
   transition: all 450ms ease-in-out;
 }
 
 .sparkle {
-  fill: #AAAAAA;
+  fill: #ebebeb;
   transition: all 800ms ease;
 }
 
 .text {
   font-weight: 600;
-  color: #AAAAAA;
+  color: #ebebeb;
   font-size: large;
 }
 
