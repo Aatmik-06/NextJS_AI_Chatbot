@@ -67,15 +67,15 @@ export default function Home() {
   //  }
    return (
      <>
-      <Vortex 
+      
+   <Container fluid id='cont' className="p-1">
+   <Vortex 
         backgroundColor="black"
         rangeY={800}
         particleCount={500}
         baseHue={500}
         className="flex items-center flex-col justify-center w-full h-full"
       >
-   <Container fluid id='cont' className="p-1">
-     
          <div id='main'>
       <h1>Genie AI Chatbot</h1>
       <div>
@@ -110,11 +110,11 @@ export default function Home() {
      
       </div>
       </div>
-     
+      </Vortex>
      
        </Container>
         
-       </Vortex>
+       
      </>
    )
 }
