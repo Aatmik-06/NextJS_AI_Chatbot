@@ -134,7 +134,7 @@
   max-height: 100vh;
   overflow: hidden;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 #ans {
@@ -143,7 +143,7 @@
   max-height: 50vh;
   overflow-y: auto;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 #cont {
@@ -151,7 +151,7 @@
   min-height: 100vh;
   max-height: 100vh;
   box-sizing: border-box;
-  /* margin: 0 0 0 0; */
+  margin: 0 0 0 0;
   padding: 0;
 }
 
