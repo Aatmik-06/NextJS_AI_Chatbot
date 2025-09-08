@@ -14,7 +14,7 @@ export default function Home() {
   const [answer, setAnswer] = useState("");
 
   // Created function to generate answer
-
+  
   async function generatedanswer() {
     if (question == "") {
       alert("Please provide a question or prompt");

@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/cssinjs": "^1.23.0",
+    "@remixicon/react": "^4.6.0",
+    "antd": "^5.24.2",
     "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
     "class-variance-authority": "^0.7.1",
