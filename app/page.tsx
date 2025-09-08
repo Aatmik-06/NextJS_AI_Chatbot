@@ -22,7 +22,7 @@ export default function Home() {
       setAnswer("Thinking....");
       try {
         const response = await axios({
-          url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyAmI8sN1T5SzP3AlM-5CPxFRlxFUyxJvd0",
+          url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyAmI8sN1T5SzP3AlM-5CPxFRlxFUyxJvd0", 
           method: "post",
           data: {
             contents: [{ parts: [{ text: question }] }],
